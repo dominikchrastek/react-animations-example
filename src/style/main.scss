@@ -1,0 +1,26 @@
+body {
+  color: #000;
+}
+
+.SimpleMotion {
+  display: flex;
+}
+
+.SimpleMotion-animated {
+  display: inline-block;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+.SimpleMotion-text {
+  display: inline-block;
+}
+
+.Transition-text {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.Transition-animated {
+  overflow-x: hidden;
+}

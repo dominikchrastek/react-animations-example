@@ -1,0 +1,43 @@
+{
+  "name": "react-animations-example",
+  "version": "1.0.0",
+  "description": "Learning animations in react ecosystem",
+  "main": "index.js",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-motion": "^0.4.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.0",
+    "babel-preset-env": "^1.1.4",
+    "babel-preset-react": "^6.16.0",
+    "css-loader": "^0.26.1",
+    "html-webpack-plugin": "^2.26.0",
+    "node-sass": "^4.3.0",
+    "rimraf": "^2.5.4",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.2.0-rc.0",
+    "webpack-dev-server": "^2.2.0-rc.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "build": "NODE_ENV=production npm run clean && webpack -p",
+    "dev": "webpack-dev-server",
+    "deploy": "npm run build && git subtree push --prefix dist origin gh-pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dominikchrastek/react-animations-example.git"
+  },
+  "author": "dominikchrastek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dominikchrastek/react-animations-example/issues"
+  },
+  "homepage": "https://github.com/dominikchrastek/react-animations-example#readme"
+}
