@@ -28,7 +28,7 @@
     "clean": "rimraf dist",
     "build": "NODE_ENV=production npm run clean && webpack -p",
     "dev": "webpack-dev-server",
-    "deploy": "npm run build && git subtree push --prefix dist origin gh-pages"
+    "deploy": "npm run build && git subtree push --prefix dist origin master"
   },
   "repository": {
     "type": "git",
